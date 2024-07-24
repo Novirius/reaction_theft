@@ -24,7 +24,8 @@ public unsafe class Decombos : PluginModule
         Lord_of_Crowns = 7444,
         Lady_of_Crowns = 7445,
 
-        Geirskogul = 3555
+        Geirskogul = 3555,
+        Dread_Fangs = 34607
     }
 
     /*public override bool ShouldEnable => ReAction.Config.EnableDecomboMeditation
@@ -76,6 +77,9 @@ public unsafe class Decombos : PluginModule
                 return minorArcanaAdjustment != ActionID.Minor_Arcana ? minorArcanaAdjustment : actionID;
 
             case ActionID.Geirskogul when ReAction.Config.EnableDecomboGeirskogul:
+                return actionID;
+
+            case ActionID.Dread_Fangs when ReAction.Config.EnableDecomboDreadFangs:
                 return actionID;
 
             default:

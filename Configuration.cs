@@ -112,6 +112,7 @@ public class Configuration : PluginConfiguration, IPluginConfiguration
     public bool EnableDecomboEarthlyStar = false;
     public bool EnableDecomboMinorArcana = false;
     public bool EnableDecomboGeirskogul = false;
+    public bool EnableDecomboDreadFangs = false;
 
     public override void Initialize() { }
 

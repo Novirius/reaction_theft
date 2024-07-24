@@ -567,6 +567,9 @@ public static class PluginUI
             save |= ImGui.Checkbox("Sunder Geirskogul", ref ReAction.Config.EnableDecomboGeirskogul);
             ImGuiEx.SetItemTooltip("Removes the Geirskogul -> Nastrond combo. You will need to use the\nhotbar feature below to place it on your hotbar in order to use it again.\nNastrond ID: 7400");
 
+            save |= ImGui.Checkbox("Sunder Dread Fangs", ref ReAction.Config.EnableDecomboDreadFangs);
+            ImGuiEx.SetItemTooltip("Removes the Dread Fangs combo. You will need to use the\nhotbar feature below to place it on your hotbar in order to use it again.");
+
             ImGuiEx.EndGroupBox();
         }
 
